@@ -13,7 +13,7 @@ public class NetworkServer : MonoBehaviour
     {
         m_Driver = new UdpNetworkDriver(new INetworkParameter[0]);
         var endpoint = NetworkEndPoint.AnyIpv4;
-        endpoint.Port = 12345;
+        endpoint.Port = 54321;
         if (m_Driver.Bind(endpoint) != 0)
             Debug.Log("Failed to bind to port 9000");
         else
